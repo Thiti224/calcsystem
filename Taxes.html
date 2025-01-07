@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เครื่องคำนวณภาษี</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #00ff66;
+        }
+
+        h1 {
+            text-align: center;
+            color: #000000;
+            margin-top: 20px;
+        }
+
+        .form-container {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 50px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #0080ff;
+        }
+
+        input[type="number"], input[type="submit"], input[type="reset"] {
+            width: 80%;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 50px; 
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"], input[type="reset"] {
+            background-color: #3300ff;
+            color: rgb(0, 255, 153);
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: #0099ff;
+        }
+
+        .result {
+            margin-top: 20px;
+        }
+
+        .result h3 {
+            font-size: 18px;
+            color: #d400ff;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <a href="./name.html">Profile</a>
+        <a href="./bmi.html">BMI</a>
+        <a class="active" href="./tax.html">Taxes</a>
+    </div>
+    <h1>เครื่องคำนวณภาษี</h1>
+    <div class="form-container">
+        <h2>เครื่องคำนวณภาษี</h2>
+        <form id="taxForm">
+            <label for="income">รายได้ (บาท):</label>
+            <input type="number" id="income" step="1000" required>
+
+            <input type="submit" value="คำนวณภาษี">
+            <input type="reset" value="รีเซ็ต">
+        </form>
+
+        <div class="result">
+            <h3>ภาษีของคุณ: <span id="taxValue"></span> บาท</h3>
+        </div>
+    </div>
+
+    <script src="./JS/Taxes.js"></script>
+</body>
+</html>

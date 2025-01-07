@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+p{
+    font-size: 32pt;
+    background-color: brown;
+    color: red;
+}
+#Mynamehaha{
+    font-size: 42pt;
+    color: darkcyan;
+}
+.Mynamehaha{
+    font-size: 52pt;
+    color: rgb(245, 10, 245);
+}
+
+p.text{
+    color: rgb(0, 72, 255);
+    font-size: 56pt;
+}
+.c-button {
+  color: #000;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 0.9em 1.6em;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+}
+.c-button--gooey {
+  color: #06c8d9;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 4px solid #06c8d9;
+  border-radius: 0;
+  position: relative;
+  transition: all 700ms ease;
+}
+
+.c-button--gooey .c-button__blobs {
+  height: 100%;
+  filter: url(#goo);
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: -3px;
+  right: -1px;
+  z-index: -1;
+}
+
+.c-button--gooey .c-button__blobs div {
+  background-color: #06c8d9;
+  width: 34%;
+  height: 100%;
+  border-radius: 100%;
+  position: absolute;
+  transform: scale(1.4) translateY(125%) translateZ(0);
+  transition: all 700ms ease;
+}
+
+.c-button--gooey .c-button__blobs div:nth-child(1) {
+  left: -5%;
+}
+
+.c-button--gooey .c-button__blobs div:nth-child(2) {
+  left: 30%;
+  transition-delay: 60ms;
+}
+
+.c-button--gooey .c-button__blobs div:nth-child(3) {
+  left: 66%;
+  transition-delay: 25ms;
+}
+
+.c-button--gooey:hover {
+  color: #fff;
+}
+
+.c-button--gooey:hover .c-button__blobs div {
+  transform: scale(1.4) translateY(0) translateZ(0);
+}
+.gamut-1p88oxo-AnchorBase {
+    border: none;
+    padding: 0;
+    font-size: inherit;
+    white-space: initial;
+    box-shadow: none;
+    display: inline-block;
+    position: relative;
+    color: var(--color-text);
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+a {
+    color: var(--color-primary);
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+li {
+    text-align: -webkit-match-parent;
+}
+#shadowBox{
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 3px solid;
+}
+.rainbow{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 32px;
+    font-family: monospace;
+    letter-spacing: 5px;
+    animation: colorRotate 6s linear 0s infinite;
+}
+@keyframes colorRotate {
+    from {
+        color: #6666ff;
+    }
+    10% {
+        color: #0099ff;
+    }
+    50% {
+        color: #00ff00;
+    }
+    75% {
+        color: #ff3399;
+    }
+    100% {
+        color: #6666ff;
+    }
+}
+.btn{
+    text-decoration: underline;
+}
+.hobby span{
+    background-color: red;
+    font-size: 2rem;
+}
+.inline {
+  display: inline;
+  background-color: rgb(213, 213, 213);
+  padding: 20px;
+  margin-right: 5px;
+}
+.box {
+  background-color: rgb(213, 213, 213);
+  padding: 20px;
+  margin-right: 5px;
+}
+.flex-box{ 
+  display: flex;
+  justify-content: space-between;
+}
+.grid-box {
+  display: grid;
+  grid-template-columns: repeat(3, 500px);
+  row-gap: 10px;
+}
+
+@media (max-width: 1200px) {
+  .grid-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
